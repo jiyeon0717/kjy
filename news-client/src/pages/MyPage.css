@@ -1,0 +1,121 @@
+/* src/pages/MyPage.css */
+
+/* =========================================
+   1. 전체 레이아웃 (Layout)
+   ========================================= */
+.mypage-container {
+  padding: 20px;
+  max-width: 900px; /* 최대 너비 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+/* === 타이틀 === */
+.mypage-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* === 사용자 정보 === */
+.user-info-text {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* 강조 텍스트 */
+.user-info-text strong {
+  color: #2563eb; /* ★ 사용자 이름 색상 강조 */
+  font-weight: bold;
+}
+
+/* === 내가 쓴 기사 목록 헤더 === */
+.list-header {
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333; /* 굵은 밑줄 */
+  font-size: 20px;
+}
+
+/* =========================================
+   2. 기사 목록 아이템 (Article List Item)
+   ========================================= */
+.article-list {
+  margin-top: 15px;
+}
+
+.article-item {
+  display: flex;
+  justify-content: space-between; /* 양 끝 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  padding: 15px 0;
+  border-bottom: 1px solid #eee; /* 얇은 구분선 */
+}
+
+/* 기사 제목 영역 (클릭 가능 영역) */
+.article-link-section {
+  cursor: pointer;
+  flex: 1; /* 남은 공간 모두 차지 */
+  margin-right: 15px;
+  transition: color 0.2s;
+}
+
+.article-link-section:hover h4 {
+  color: #2563eb; /* ★ 호버 시 제목 색상 변경 */
+}
+
+.article-item h4 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.article-item .date-info {
+  font-size: 12px;
+  color: #888;
+}
+
+/* =========================================
+   3. 버튼 영역 (Actions)
+   ========================================= */
+.action-btns {
+  display: flex;
+  gap: 8px; /* 버튼 사이 간격 */
+}
+
+/* 공통 버튼 스타일 */
+.action-btns button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+/* 수정 버튼 */
+.btn-edit {
+  background: white;
+  color: #333;
+  border-color: #aaa;
+}
+
+/* 삭제 버튼 */
+.btn-delete {
+  background: #f87171; /* ★ 빨간색 배경 */
+  color: white;
+  border: none;
+}
+
+.btn-delete:hover {
+  background-color: #ef4444;
+}
+
+/* 작성된 기사가 없을 때 메시지 */
+.no-articles-message {
+  margin-top: 20px;
+  color: #888;
+  text-align: center;
+}

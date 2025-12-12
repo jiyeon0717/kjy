@@ -1,0 +1,120 @@
+/* src/pages/New.css */
+
+.new-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.new-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.btn-back {
+  padding: 8px 12px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* === 폼 전체 컨테이너 === */
+.new-form {
+  margin-top: 30px;
+}
+
+.input-group {
+  margin-bottom: 25px; /* 입력 그룹 간 간격 */
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  color: #333;
+}
+
+/* 입력 필드 (제목, 내용) */
+.input-field {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.textarea-field {
+  height: 200px;
+  resize: vertical;
+}
+
+/* === 라디오 버튼 디자인 (핵심) === */
+.radio-list {
+  display: flex;
+  flex-wrap: wrap; /* 창이 좁아지면 자동으로 줄바꿈 */
+  gap: 15px; /* 라디오 버튼 사이 간격 */
+}
+
+.radio-label {
+  /* 라디오 텍스트와 버튼을 묶어 클릭 영역을 넓힘 */
+  cursor: pointer; 
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0; /* 연한 테두리 */
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.radio-label:hover {
+  background-color: #f7f7f7;
+}
+
+.radio-label input[type="radio"] {
+  /* 실제 라디오 버튼 크기 및 위치 조정 */
+  margin-right: 8px; 
+  width: 16px;
+  height: 16px;
+  accent-color: #2563eb; /* ★ 라디오 버튼의 색상 변경 (파란색) */
+}
+
+/* === 액션 버튼 === */
+.action-buttons {
+    display: flex;
+    justify-content: center; /* 버튼 중앙 정렬 */
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.btn-submit, .btn-cancel {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 150px;
+}
+
+.btn-submit {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: #ddd;
+    color: #333;
+}
+
+.file-info-text {
+    text-align: center;
+    color: #888;
+    margin-top: -10px;
+    font-size: 14px;
+}

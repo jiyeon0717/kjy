@@ -1,0 +1,113 @@
+/* src/components/Header.css */
+
+/* === 1. 헤더 레이아웃 === */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* 양쪽 끝으로 요소 배치 */
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 2px solid #333; /* 하단 구분선 */
+  background: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); /* 은은한 그림자 */
+}
+
+/* 로고 스타일 */
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  cursor: pointer;
+  margin: 0;
+}
+
+.logo span {
+  font-weight: 400; /* '뉴스' 글자는 얇게 */
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+/* === 2. 검색 영역 === */
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* 검색 입력창 */
+.search-bar {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* 모서리를 둥글게 */
+  width: 250px;
+  transition: border-color 0.2s;
+}
+
+.search-bar:focus {
+  border-color: #007bff; /* 포커스 시 파란색 */
+}
+
+/* 검색 버튼 (돋보기) */
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+}
+
+/* === 3. 우측 메뉴 및 버튼 === */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.member-menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* 사용자 이름 */
+.user-name {
+  font-weight: bold;
+  color: #555;
+  font-size: 14px;
+}
+
+/* 공통 버튼 스타일 */
+.btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* 글쓰기 버튼 (파란색) */
+.btn-write {
+  background-color: #2563eb; 
+  color: white;
+  border: 1px solid #2563eb;
+}
+
+/* 마이페이지 버튼 (흰색) */
+.btn-mypage {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+/* 로그인 버튼 (검정색) */
+.btn-login {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+/* 로그아웃 버튼 (회색) */
+.btn-logout {
+  background-color: #999;
+  color: white;
+  border: 1px solid #999;
+}
